@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 const clienteController = require('../controllers/clienteController');
 const productosController = require('../controllers/productosController');
+const pedidosController = require('../controllers/pedidosController');
 
 
 module.exports = function(){
@@ -35,6 +36,20 @@ module.exports = function(){
     productosController.actualizarProducto);
     ///eliminar producto
     router.delete('/productos/:idProducto',productosController.eliminarProducto);
+    /**
+     * PRODUCTOS
+     */
+    router.post('/pedidos',
+    pedidosController.nuevoPedido);
+
+    router.get('/pedidos',pedidosController.listarPedidos);
+    //listar un Pedido
+    router.get('/pedidos/:idPedido',pedidosController.listarPedido);
+    //actualizar Pedidos
+    router.put('/pedidos/:idPedido',
+    pedidosController.actualizarPedido);
+    ///eliminar Pedido
+    router.delete('/pedidos/:idPedido',pedidosController.eliminarPedido); 
 
 
     return router;
