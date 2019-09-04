@@ -10,12 +10,14 @@ const cors = require('cors');
 
 //conectar mongo
 mongoose.Promise = global.Promise;
-console.log(typeof(process.env.DB_URL))
-console.log(typeof(process.env.FRONTEND_URL))
 mongoose.connect(process.env.DB_URL,{useNewUrlParser: true});
 
 //crear el servidor
 const app = express();
+
+//carpeta publica
+app.use(express.static('uploads'));
+
 
 //habilitar bodyparser
 app.use(bodyParser.json());
@@ -41,8 +43,6 @@ app.use(cors(corsOptions));
 //Rutas de la app
 app.use('/',routes());
 
-//carpeta publica
-app.use(express.static('uploads'));
 
 const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 5000;
