@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5d656f07e3e7eed8fcbde088"},"precio":25,"imagen":"5wj2OWBP0.jpeg","__v":0,"descripcion":"Camisa Vue"}
+{"_id":{"$oid":"5d65700fe3e7eed8fcbde089"},"precio":55,"imagen":"So8FBOr5A.jpeg","__v":0,"descripcion":"Remera JS"}
+{"_id":{"$oid":"5d67f7cf3e1a9d8ed0c2e00a"},"descripcion":"Remera Sass","precio":25,"imagen":"P1v1_9IaE.jpeg","__v":0}
+{"_id":{"$oid":"5d67f7fa3e1a9d8ed0c2e00c"},"descripcion":"Camisa GitHub","precio":50,"imagen":"zah0z9sLD.jpeg","__v":0}

@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5d653edd2cb8690d0d8f36da"},"nombre":"Martillo","apellido":"Gutierrez","empresa":"Microsoft","email":"micro@micro","telefono":"45","__v":0}
+{"_id":{"$oid":"5d653f4b2cb8690d0d8f36db"},"nombre":"Marta","apellido":"Gutierrez","empresa":"facebook","email":"marti@marti.com","telefono":"3333","__v":0}
